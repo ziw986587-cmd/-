@@ -1,0 +1,650 @@
+[
+  {
+    "id": "nature-01",
+    "group": "山水风景",
+    "name": "山川",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3de.svg"
+  },
+  {
+    "id": "nature-02",
+    "group": "山水风景",
+    "name": "日出",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f304.svg"
+  },
+  {
+    "id": "nature-03",
+    "group": "山水风景",
+    "name": "晨光",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f305.svg"
+  },
+  {
+    "id": "nature-04",
+    "group": "山水风景",
+    "name": "落日",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f307.svg"
+  },
+  {
+    "id": "nature-05",
+    "group": "山水风景",
+    "name": "星夜",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f303.svg"
+  },
+  {
+    "id": "nature-06",
+    "group": "山水风景",
+    "name": "银河",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f30c.svg"
+  },
+  {
+    "id": "nature-07",
+    "group": "山水风景",
+    "name": "海岛",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3dd.svg"
+  },
+  {
+    "id": "nature-08",
+    "group": "山水风景",
+    "name": "海滩",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3d6.svg"
+  },
+  {
+    "id": "nature-09",
+    "group": "山水风景",
+    "name": "火山",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f30b.svg"
+  },
+  {
+    "id": "nature-10",
+    "group": "山水风景",
+    "name": "雪山",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3d4.svg"
+  },
+  {
+    "id": "nature-11",
+    "group": "山水风景",
+    "name": "露营",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3d5.svg"
+  },
+  {
+    "id": "nature-12",
+    "group": "山水风景",
+    "name": "彩虹",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f308.svg"
+  },
+  {
+    "id": "toy-01",
+    "group": "动物公仔",
+    "name": "熊猫",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f43c.svg"
+  },
+  {
+    "id": "toy-02",
+    "group": "动物公仔",
+    "name": "小猫",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f431.svg"
+  },
+  {
+    "id": "toy-03",
+    "group": "动物公仔",
+    "name": "小狗",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f436.svg"
+  },
+  {
+    "id": "toy-04",
+    "group": "动物公仔",
+    "name": "狐狸",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f98a.svg"
+  },
+  {
+    "id": "toy-05",
+    "group": "动物公仔",
+    "name": "兔子",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f430.svg"
+  },
+  {
+    "id": "toy-06",
+    "group": "动物公仔",
+    "name": "考拉",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f428.svg"
+  },
+  {
+    "id": "toy-07",
+    "group": "动物公仔",
+    "name": "老虎",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f42f.svg"
+  },
+  {
+    "id": "toy-08",
+    "group": "动物公仔",
+    "name": "狮子",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f981.svg"
+  },
+  {
+    "id": "toy-09",
+    "group": "动物公仔",
+    "name": "独角兽",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f984.svg"
+  },
+  {
+    "id": "toy-10",
+    "group": "动物公仔",
+    "name": "青蛙",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f438.svg"
+  },
+  {
+    "id": "toy-11",
+    "group": "动物公仔",
+    "name": "小熊",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f43b.svg"
+  },
+  {
+    "id": "toy-12",
+    "group": "动物公仔",
+    "name": "奶牛",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f42e.svg"
+  },
+  {
+    "id": "animal-01",
+    "group": "萌趣动物",
+    "name": "企鹅",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f427.svg"
+  },
+  {
+    "id": "animal-02",
+    "group": "萌趣动物",
+    "name": "海豚",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f42c.svg"
+  },
+  {
+    "id": "animal-03",
+    "group": "萌趣动物",
+    "name": "鲸鱼",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f433.svg"
+  },
+  {
+    "id": "animal-04",
+    "group": "萌趣动物",
+    "name": "章鱼",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f419.svg"
+  },
+  {
+    "id": "animal-05",
+    "group": "萌趣动物",
+    "name": "蝴蝶",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f98b.svg"
+  },
+  {
+    "id": "animal-06",
+    "group": "萌趣动物",
+    "name": "蜜蜂",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f41d.svg"
+  },
+  {
+    "id": "animal-07",
+    "group": "萌趣动物",
+    "name": "瓢虫",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f41e.svg"
+  },
+  {
+    "id": "animal-08",
+    "group": "萌趣动物",
+    "name": "乌龟",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f422.svg"
+  },
+  {
+    "id": "animal-09",
+    "group": "萌趣动物",
+    "name": "猴子",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f435.svg"
+  },
+  {
+    "id": "animal-10",
+    "group": "萌趣动物",
+    "name": "小猪",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f437.svg"
+  },
+  {
+    "id": "animal-11",
+    "group": "萌趣动物",
+    "name": "小鼠",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f42d.svg"
+  },
+  {
+    "id": "animal-12",
+    "group": "萌趣动物",
+    "name": "仓鼠",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f439.svg"
+  },
+  {
+    "id": "plant-01",
+    "group": "花草树木",
+    "name": "樱花",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f338.svg"
+  },
+  {
+    "id": "plant-02",
+    "group": "花草树木",
+    "name": "向日葵",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f33b.svg"
+  },
+  {
+    "id": "plant-03",
+    "group": "花草树木",
+    "name": "玫瑰",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f339.svg"
+  },
+  {
+    "id": "plant-04",
+    "group": "花草树木",
+    "name": "郁金香",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f337.svg"
+  },
+  {
+    "id": "plant-05",
+    "group": "花草树木",
+    "name": "扶桑花",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f33a.svg"
+  },
+  {
+    "id": "plant-06",
+    "group": "花草树木",
+    "name": "小白花",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f33c.svg"
+  },
+  {
+    "id": "plant-07",
+    "group": "花草树木",
+    "name": "四叶草",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f340.svg"
+  },
+  {
+    "id": "plant-08",
+    "group": "花草树木",
+    "name": "枫叶",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f341.svg"
+  },
+  {
+    "id": "plant-09",
+    "group": "花草树木",
+    "name": "仙人掌",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f335.svg"
+  },
+  {
+    "id": "plant-10",
+    "group": "花草树木",
+    "name": "松树",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f332.svg"
+  },
+  {
+    "id": "plant-11",
+    "group": "花草树木",
+    "name": "棕榈树",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f334.svg"
+  },
+  {
+    "id": "plant-12",
+    "group": "花草树木",
+    "name": "幼苗",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f331.svg"
+  },
+  {
+    "id": "fruit-01",
+    "group": "缤纷水果",
+    "name": "草莓",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f353.svg"
+  },
+  {
+    "id": "fruit-02",
+    "group": "缤纷水果",
+    "name": "西瓜",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f349.svg"
+  },
+  {
+    "id": "fruit-03",
+    "group": "缤纷水果",
+    "name": "葡萄",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f347.svg"
+  },
+  {
+    "id": "fruit-04",
+    "group": "缤纷水果",
+    "name": "樱桃",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f352.svg"
+  },
+  {
+    "id": "fruit-05",
+    "group": "缤纷水果",
+    "name": "桃子",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f351.svg"
+  },
+  {
+    "id": "fruit-06",
+    "group": "缤纷水果",
+    "name": "苹果",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f34e.svg"
+  },
+  {
+    "id": "fruit-07",
+    "group": "缤纷水果",
+    "name": "橙子",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f34a.svg"
+  },
+  {
+    "id": "fruit-08",
+    "group": "缤纷水果",
+    "name": "柠檬",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f34b.svg"
+  },
+  {
+    "id": "fruit-09",
+    "group": "缤纷水果",
+    "name": "香蕉",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f34c.svg"
+  },
+  {
+    "id": "fruit-10",
+    "group": "缤纷水果",
+    "name": "菠萝",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f34d.svg"
+  },
+  {
+    "id": "fruit-11",
+    "group": "缤纷水果",
+    "name": "猕猴桃",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f95d.svg"
+  },
+  {
+    "id": "fruit-12",
+    "group": "缤纷水果",
+    "name": "椰子",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f965.svg"
+  },
+  {
+    "id": "food-01",
+    "group": "可爱美食",
+    "name": "冰淇淋",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f366.svg"
+  },
+  {
+    "id": "food-02",
+    "group": "可爱美食",
+    "name": "甜甜圈",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f369.svg"
+  },
+  {
+    "id": "food-03",
+    "group": "可爱美食",
+    "name": "曲奇",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f36a.svg"
+  },
+  {
+    "id": "food-04",
+    "group": "可爱美食",
+    "name": "蛋糕",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f370.svg"
+  },
+  {
+    "id": "food-05",
+    "group": "可爱美食",
+    "name": "纸杯蛋糕",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f9c1.svg"
+  },
+  {
+    "id": "food-06",
+    "group": "可爱美食",
+    "name": "汉堡",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f354.svg"
+  },
+  {
+    "id": "food-07",
+    "group": "可爱美食",
+    "name": "披萨",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f355.svg"
+  },
+  {
+    "id": "food-08",
+    "group": "可爱美食",
+    "name": "薯条",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f35f.svg"
+  },
+  {
+    "id": "food-09",
+    "group": "可爱美食",
+    "name": "爆米花",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f37f.svg"
+  },
+  {
+    "id": "food-10",
+    "group": "可爱美食",
+    "name": "寿司",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f363.svg"
+  },
+  {
+    "id": "food-11",
+    "group": "可爱美食",
+    "name": "饭团",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f359.svg"
+  },
+  {
+    "id": "food-12",
+    "group": "可爱美食",
+    "name": "棒棒糖",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f36d.svg"
+  },
+  {
+    "id": "space-01",
+    "group": "星空天气",
+    "name": "太阳",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/2600.svg"
+  },
+  {
+    "id": "space-02",
+    "group": "星空天气",
+    "name": "微笑太阳",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f31e.svg"
+  },
+  {
+    "id": "space-03",
+    "group": "星空天气",
+    "name": "微笑月亮",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f31d.svg"
+  },
+  {
+    "id": "space-04",
+    "group": "星空天气",
+    "name": "弯月",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f319.svg"
+  },
+  {
+    "id": "space-05",
+    "group": "星空天气",
+    "name": "星星",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/2b50.svg"
+  },
+  {
+    "id": "space-06",
+    "group": "星空天气",
+    "name": "闪亮星",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f31f.svg"
+  },
+  {
+    "id": "space-07",
+    "group": "星空天气",
+    "name": "雪花",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/2744.svg"
+  },
+  {
+    "id": "space-08",
+    "group": "星空天气",
+    "name": "雪人",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/26c4.svg"
+  },
+  {
+    "id": "space-09",
+    "group": "星空天气",
+    "name": "地球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f30f.svg"
+  },
+  {
+    "id": "space-10",
+    "group": "星空天气",
+    "name": "土星",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1fa90.svg"
+  },
+  {
+    "id": "space-11",
+    "group": "星空天气",
+    "name": "彗星",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/2604.svg"
+  },
+  {
+    "id": "space-12",
+    "group": "星空天气",
+    "name": "飞碟",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f6f8.svg"
+  },
+  {
+    "id": "sport-01",
+    "group": "运动玩具",
+    "name": "足球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/26bd.svg"
+  },
+  {
+    "id": "sport-02",
+    "group": "运动玩具",
+    "name": "篮球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3c0.svg"
+  },
+  {
+    "id": "sport-03",
+    "group": "运动玩具",
+    "name": "棒球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/26be.svg"
+  },
+  {
+    "id": "sport-04",
+    "group": "运动玩具",
+    "name": "网球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3be.svg"
+  },
+  {
+    "id": "sport-05",
+    "group": "运动玩具",
+    "name": "排球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3d0.svg"
+  },
+  {
+    "id": "sport-06",
+    "group": "运动玩具",
+    "name": "橄榄球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3c8.svg"
+  },
+  {
+    "id": "sport-07",
+    "group": "运动玩具",
+    "name": "保龄球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3b3.svg"
+  },
+  {
+    "id": "sport-08",
+    "group": "运动玩具",
+    "name": "羽毛球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3f8.svg"
+  },
+  {
+    "id": "sport-09",
+    "group": "运动玩具",
+    "name": "乒乓球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3d3.svg"
+  },
+  {
+    "id": "sport-10",
+    "group": "运动玩具",
+    "name": "风筝",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1fa81.svg"
+  },
+  {
+    "id": "sport-11",
+    "group": "运动玩具",
+    "name": "拼图",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f9e9.svg"
+  },
+  {
+    "id": "sport-12",
+    "group": "运动玩具",
+    "name": "泰迪熊",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f9f8.svg"
+  },
+  {
+    "id": "travel-01",
+    "group": "旅行趣物",
+    "name": "小汽车",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f697.svg"
+  },
+  {
+    "id": "travel-02",
+    "group": "旅行趣物",
+    "name": "出租车",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f695.svg"
+  },
+  {
+    "id": "travel-03",
+    "group": "旅行趣物",
+    "name": "火车",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f682.svg"
+  },
+  {
+    "id": "travel-04",
+    "group": "旅行趣物",
+    "name": "飞机",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/2708.svg"
+  },
+  {
+    "id": "travel-05",
+    "group": "旅行趣物",
+    "name": "帆船",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/26f5.svg"
+  },
+  {
+    "id": "travel-06",
+    "group": "旅行趣物",
+    "name": "直升机",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f681.svg"
+  },
+  {
+    "id": "travel-07",
+    "group": "旅行趣物",
+    "name": "城堡",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3f0.svg"
+  },
+  {
+    "id": "travel-08",
+    "group": "旅行趣物",
+    "name": "摩天轮",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3a1.svg"
+  },
+  {
+    "id": "travel-09",
+    "group": "旅行趣物",
+    "name": "旋转木马",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3a0.svg"
+  },
+  {
+    "id": "travel-10",
+    "group": "旅行趣物",
+    "name": "吉他",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3b8.svg"
+  },
+  {
+    "id": "travel-11",
+    "group": "旅行趣物",
+    "name": "调色盘",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f3a8.svg"
+  },
+  {
+    "id": "travel-12",
+    "group": "旅行趣物",
+    "name": "气球",
+    "source": "https://raw.githubusercontent.com/jdecked/twemoji/v15.1.0/assets/svg/1f388.svg"
+  }
+]

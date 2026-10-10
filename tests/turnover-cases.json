@@ -1,0 +1,296 @@
+[
+  {
+    "selection": "1番",
+    "amount": 20000,
+    "profit": 58200,
+    "expected": 20000
+  },
+  {
+    "selection": "12角",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 11000
+  },
+  {
+    "selection": "1念2",
+    "amount": 20000,
+    "profit": 19500,
+    "expected": 20000
+  },
+  {
+    "selection": "1念23",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 11000
+  },
+  {
+    "selection": "1无2",
+    "amount": 20000,
+    "profit": 19400,
+    "expected": 20000
+  },
+  {
+    "selection": "1正",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 11000
+  },
+  {
+    "selection": "大",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 20000
+  },
+  {
+    "selection": "小",
+    "amount": 20000,
+    "profit": 58200,
+    "expected": 20000
+  },
+  {
+    "selection": "单",
+    "amount": 20000,
+    "profit": 19500,
+    "expected": 20000
+  },
+  {
+    "selection": "双",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 20000
+  },
+  {
+    "selection": "12无3",
+    "amount": 20000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "1通23",
+    "amount": 20000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "123车",
+    "amount": 20000,
+    "profit": 6466,
+    "expected": 6667
+  },
+  {
+    "selection": "234车",
+    "amount": 10000,
+    "profit": 3233,
+    "expected": 3333
+  },
+  {
+    "selection": "123车",
+    "amount": 30000,
+    "profit": 9699,
+    "expected": 10000
+  },
+  {
+    "selection": "12无3",
+    "amount": 101,
+    "profit": 49,
+    "expected": 51
+  },
+  {
+    "selection": "1通23",
+    "amount": 101,
+    "profit": 49,
+    "expected": 51
+  },
+  {
+    "selection": "1正",
+    "amount": 110,
+    "profit": 30,
+    "expected": 36
+  },
+  {
+    "selection": "1正",
+    "amount": 109,
+    "profit": 30,
+    "expected": 35
+  },
+  {
+    "selection": "大单",
+    "amount": 20000,
+    "profit": 58200,
+    "expected": 20000
+  },
+  {
+    "selection": "大双",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 20000
+  },
+  {
+    "selection": "小单",
+    "amount": 20000,
+    "profit": 58200,
+    "expected": 20000
+  },
+  {
+    "selection": "小双",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 20000
+  },
+  {
+    "selection": "01特",
+    "amount": 20000,
+    "profit": 360000,
+    "expected": 360000
+  },
+  {
+    "selection": "旧玩法",
+    "amount": 20000,
+    "profit": 10000,
+    "expected": 10000
+  },
+  {
+    "selection": "大",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "大",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "大",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "小",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "小",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "小",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "单",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "单",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "单",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "双",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "双",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "双",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "小单",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "小单",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "小单",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "小双",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "小双",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "小双",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "大单",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "大单",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "大单",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  },
+  {
+    "selection": "大双",
+    "amount": 10000,
+    "profit": 100,
+    "expected": 10000
+  },
+  {
+    "selection": "大双",
+    "amount": 10000,
+    "profit": 9700,
+    "expected": 10000
+  },
+  {
+    "selection": "大双",
+    "amount": 10000,
+    "profit": 30000,
+    "expected": 10000
+  }
+]

@@ -1,0 +1,24 @@
+[Unit]
+Description=Local Center unified member portal and admin
+After=network.target
+
+[Service]
+Type=simple
+User=local-center
+Group=local-center
+WorkingDirectory=/opt/local-center
+Environment=NODE_ENV=production
+Environment=PORT=8777
+Environment=PUBLIC_ORIGIN=__PUBLIC_ORIGIN__
+Environment=LOCAL_CENTER_DATA=/opt/local-center-data
+ExecStart=/usr/bin/node /opt/local-center/server.js
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/local-center-data
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,31 @@
+# Runtime and member data
+data/
+**/state*.json
+**/database.json
+*.overlay.json
+*.lock
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*known-hosts*
+# Local tooling, test output, backups and deployment archives
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-temp/
+test-tmp/
+test-state/
+tmp/
+verify-run*/
+artifacts/
+*.tar
+*.tar.gz
+*.zip
+*.bak
+backups/
+.DS_Store
+Thumbs.db

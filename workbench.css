@@ -1,0 +1,80 @@
+/* Compact desktop workbench: 1080px overall width, 320px left rail, 10px gutters. */
+.reference-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:8px;min-height:41px;padding:8px 12px;flex-wrap:nowrap}.reference-head .wb-account{white-space:nowrap;font-size:12px}.reference-head button{font-size:12px;padding:3px 7px}.reference-head nav{gap:5px;white-space:nowrap}.wb-room-entries{display:flex;justify-content:center;gap:5px;white-space:nowrap}.wb-room-entries button{color:#225485;background:linear-gradient(#fff,#e8eef5);border-color:#9aabba;padding:3px 6px}.wb-room-entries button.selected{color:white;background:#285e94;border-color:#285e94}#home-entry{background:#e5edf6}#workbench-view{width:100%;max-width:1080px}#workbench-view .workspace{max-width:1080px;margin:0;grid-template-columns:320px minmax(690px,1fr)}#workbench-view .local-note{min-height:29px}#workbench-view .registration{height:326px}#workbench-view .registration>div:not(.section-head){padding:5px}#workbench-view .registration .wb-qr-area{height:153px;display:grid;place-items:center;padding:5px}#workbench-view .registration img{width:128px;height:128px;border:0}#workbench-view .registration>a{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:7px 12px}#wb-entry-user{font-size:11px;color:#888}#wb-qr-empty{font-size:12px;color:#888}#workbench-view .reporting{min-height:174px}#workbench-view .report-toolbar{gap:12px}#workbench-view .report-state{min-height:96px}#workbench-view .config{min-height:149px}#workbench-view .game-row{min-height:40px;padding:7px 9px;gap:10px}#workbench-view .settings-row{min-height:40px;padding:7px 9px;gap:10px}#workbench-view .config-note{height:26px;padding:6px 9px}#workbench-view .requests{min-height:115px}#wb-requests{max-height:200px;overflow:auto}#workbench-view .member-area{grid-template-columns:minmax(300px,1fr) 200px;min-height:553px}#workbench-view .member-list{max-height:700px}#workbench-view .member-tools{height:39px}#workbench-view .member-row{height:34px;flex-wrap:nowrap}#workbench-view .member-select{flex-wrap:nowrap;white-space:nowrap}#workbench-view .member-select b{overflow:hidden;text-overflow:ellipsis}#workbench-view .member-detail{padding:10px;min-height:553px}#workbench-view .member-detail .avatar{display:grid;place-items:center;font-size:36px;margin:9px auto 3px;background:#f6e8aa}#workbench-view .member-detail input[name=amount]{min-height:31px}#workbench-view .member-detail #wb-member-form{padding:5px 0 9px}#workbench-view .member-detail small{display:block;line-height:1.8;font-size:11px}#workbench-view .member-detail .wb-link-tools{display:flex;gap:4px;justify-content:center;margin-top:9px}#workbench-view .wb-link-tools button{font-size:11px;padding:2px 4px}#workbench-view [data-config=maxBet]{width:88px}#workbench-view [data-config=minBet]{width:72px}#workbench-view #wb-game{width:155px}#workbench-view #wb-mode{width:110px}#workbench-view .member-detail form label{margin:6px 0}#workbench-view .order-list{min-height:240px}#workbench-view .command pre{min-height:55px}#workbench-view .badge{font-size:12px}#admin-dialog:has(#wb-modal-form){width:min(560px,94vw)}#admin-dialog .table-scroll{max-height:60vh}#admin-dialog td:last-child{max-width:600px;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:1180px){.reference-head{grid-template-columns:1fr auto}.wb-room-entries{grid-column:1/-1;grid-row:2;justify-content:flex-start}.reference-head .wb-account{white-space:normal}#workbench-view .workspace{grid-template-columns:280px minmax(690px,1fr);overflow-x:auto}#workbench-view .local-note span{float:none;display:block}}
+@media(max-width:650px){.reference-head{display:flex;flex-wrap:wrap}.reference-head .wb-room-entries{width:100%;justify-content:flex-start}.reference-head nav{flex-wrap:wrap;width:100%}#workbench-view .workspace{display:flex;flex-direction:column;overflow:visible}#workbench-view .registration{display:block;height:326px}#workbench-view .member-area{grid-template-columns:minmax(180px,1fr) 175px;overflow:auto}#workbench-view .member-detail{padding:7px}#workbench-view .member-detail label input{width:100px}#workbench-view .member-row{font-size:11px}#workbench-view .member-select{font-size:11px}#workbench-view .member-tools{height:auto}#workbench-view .member-tools span{display:none}#workbench-view .config-note{height:auto}#workbench-view .reporting{min-height:174px}#workbench-view .member-area{min-height:553px}}
+#workbench-view .registration .wb-qr-area{height:160px}#workbench-view .registration img{width:108px;height:108px;transform:translateY(6px)}#workbench-view .member-detail #wb-member-form{padding:5px 0}#workbench-view .member-detail form label.inline{margin:0 6px}
+#workbench-view .requests:has(#wb-requests>.empty){height:115px;overflow:hidden}#workbench-view .member-area{min-height:552px}#workbench-view .member-detail{min-height:552px}#workbench-view #wb-qr{cursor:zoom-in}
+#workbench-view .wb-qr-button{border:0;background:none;padding:0;width:108px;height:108px;min-height:0;cursor:zoom-in}
+
+#admin-dialog .wb-auto-form{max-width:none;padding:0 20px 20px}#admin-dialog .wb-auto-form>p{line-height:1.6;margin:12px 0}#admin-dialog .wb-auto-form>label{display:flex;align-items:center;gap:10px;margin:14px 0}#admin-dialog .wb-auto-form>label>input:not([type=checkbox]){flex:1;min-width:0}#admin-dialog .wb-auto-form .wb-auto-switch{justify-content:flex-start}#admin-dialog .wb-auto-switch input{width:auto;flex:none}#admin-dialog .wb-auto-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}#admin-dialog .wb-auto-grid label{display:flex;flex-direction:column;align-items:stretch;gap:6px;margin:0}#admin-dialog .wb-auto-grid input{width:100%;box-sizing:border-box}#admin-dialog .wb-auto-form small{display:block;line-height:1.6;color:#666}#admin-dialog .wb-auto-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.wb-auto-status{padding:10px;background:#f0f6fb;border:1px solid #ccdcea;overflow-wrap:anywhere}#workbench-view #wb-member-auto{line-height:1.5;margin:6px 0;overflow-wrap:anywhere}#workbench-view .wb-sim-tag{display:inline-block;font-style:normal;border:1px solid #d39b55;color:#8a5014;background:#fff0d9;padding:0 3px;font-size:11px}@media(max-width:540px){#admin-dialog .wb-auto-grid{grid-template-columns:1fr}}
+/* The modal is attached to document.body, outside the workbench section. */
+#admin-dialog .wb-auto-rooms{display:flex;gap:10px;flex-wrap:wrap;border:0;padding:14px 0 8px;margin:0}#admin-dialog .wb-auto-rooms legend{padding:0;font-weight:700}#admin-dialog .wb-auto-rooms label{display:flex;align-items:center;gap:8px;flex:1;min-width:115px;margin:0;padding:10px 12px;border:1px solid #bbc9d8;border-radius:7px;background:#f5f8fc;cursor:pointer}#admin-dialog .wb-auto-rooms label:has(input:checked){border-color:#926121;background:#fff0d9;color:#754912}#admin-dialog .wb-auto-form input[type=checkbox]{width:17px;height:17px;flex:none;margin:0;accent-color:#986221}#admin-dialog .wb-auto-form hr{border:0;border-top:1px solid #d6dce4;margin:8px 0 14px}#admin-dialog .wb-auto-status>div{display:grid;grid-template-columns:70px 1fr;gap:10px;padding:4px 0}#admin-dialog .wb-auto-activate{padding:12px;border:1px solid #e3ba72;background:#fff8e8;border-radius:6px}#admin-dialog .wb-auto-activate label{display:flex;align-items:center;gap:8px;line-height:1.5;font-weight:700}#admin-dialog .wb-auto-activate p{margin:0 0 9px;line-height:1.5}#admin-dialog .wb-auto-activate small{margin-top:8px}#admin-dialog .wb-auto-parameter-note{font-size:12px;color:#596575}#admin-dialog .wb-auto-limits{margin-top:9px}#admin-dialog .wb-auto-activate[hidden],#admin-dialog .wb-auto-ball[hidden]{display:none}
+
+/* Keep the home toolbar aligned with the compact workspace. Detailed room pages retain their layout. */
+#app:has(#workbench-view:not([hidden]))>.reference-head{max-width:1080px;grid-template-columns:minmax(0,1fr) auto}
+#app:has(#workbench-view:not([hidden]))>.reference-head .wb-account{white-space:normal}
+#app:has(#workbench-view:not([hidden]))>.reference-head .wb-room-entries{grid-column:1/-1;grid-row:2;justify-content:flex-start}
+
+#workbench-view .wb-member-footer{text-align:left;margin-top:6px}#workbench-view .wb-member-footer #wb-selected-stats{display:block;text-align:left;margin:0 0 4px;line-height:1.7}#workbench-view .wb-member-record-actions{display:flex;gap:4px;justify-content:flex-start;flex-wrap:nowrap}#workbench-view .wb-member-record-actions button{padding:3px 5px;font-size:11px;white-space:nowrap;min-width:0}
+/* Compact member editor; account reports now live in the top toolbar. */
+#workbench-view .member-area{grid-template-columns:minmax(300px,1fr) 180px;min-height:420px;align-items:start}
+#workbench-view .member-detail{min-height:0;padding:7px 8px;line-height:1.55}
+#workbench-view .member-list{min-height:420px;align-self:stretch}
+#workbench-view .member-detail .avatar{width:44px;height:44px;font-size:29px;margin:5px auto 2px}
+#workbench-view .member-detail>button:first-child{margin-bottom:5px}
+#workbench-view .member-detail form label{margin:4px 0}
+#workbench-view .member-detail p{margin:5px 0}
+#workbench-view [data-wb="clear-data"]{color:#9b1c1c;background:#fff1f1;border-color:#d69a9a}
+#workbench-view [data-wb="clear-data"]:hover{background:#ffe1e1;border-color:#b85d5d}
+#workbench-view .member-detail #wb-member-form{padding:3px 0}
+#workbench-view .member-detail #wb-member-auto{margin:4px 0}
+#workbench-view .member-detail input[name=amount]{min-height:27px;margin:4px auto}
+#admin-dialog:has(#wb-accounting){width:min(860px,96vw)}
+#wb-accounting{padding:12px 16px;min-width:0}
+.wb-account-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.wb-account-toolbar .danger{color:#9b1c1c;background:#fff1f1;border-color:#d69a9a}
+.wb-account-toolbar .danger:hover{background:#ffe1e1;border-color:#b85d5d}
+.wb-account-toolbar label{display:flex;align-items:center;gap:6px}
+.wb-account-note{color:#666;font-size:12px;line-height:1.7}
+.wb-account-actions{display:flex;gap:6px;white-space:nowrap}
+.wb-account-back{margin:10px 16px}
+#wb-account-total{font-size:12px;color:#444}
+@media(max-width:650px){#workbench-view .member-area{grid-template-columns:minmax(180px,1fr) 165px;min-height:420px}#wb-accounting{padding:10px}.wb-account-toolbar input{max-width:100%}}
+#admin-dialog #wb-accounting .wb-account-toolbar{display:flex;gap:8px;align-items:center}
+#admin-dialog #wb-accounting .wb-account-toolbar label{margin:0;display:flex;gap:6px;align-items:center}
+#admin-dialog #wb-accounting .wb-account-toolbar input{width:220px;margin:0;flex:0 1 220px}
+#admin-dialog #wb-accounting .wb-account-toolbar select{width:auto;margin:0}
+#wb-account-days{display:flex;gap:4px;flex-wrap:wrap;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid #c9d2dc}
+#wb-account-days .wb-account-date{padding:4px 10px;border:1px solid #aab9c8;background:#f6f8fb;color:#33485c;border-radius:3px;cursor:pointer}
+#wb-account-days .wb-account-date.selected{background:#2d6a9e;color:#fff;border-color:#2d6a9e}
+.wb-account-summary{background:#f7fafc;border:1px solid #c5d0da;padding:7px 9px;margin-bottom:10px;line-height:1.8;font-size:13px}
+.wb-account-summary-line{display:flex;gap:16px;flex-wrap:wrap}
+.wb-account-summary b,.wb-account-member-stats strong{font-weight:700}
+.wb-account-summary .negative,.wb-account-member-stats .negative{color:#c0392b}.wb-account-summary .positive,.wb-account-member-stats .positive{color:#147a43}
+.wb-account-members{display:flex;flex-direction:column;gap:5px;max-height:60vh;overflow:auto}
+.wb-account-member{border:1px solid #bcc8d3;background:#eef3f8;padding:8px 10px;line-height:1.8}
+.wb-account-member:nth-child(even){background:#f7f9fb}
+.wb-account-member-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid #ccd6df;padding-bottom:2px}
+.wb-account-member-stats{font-size:12px;color:#394b5d;white-space:normal}
+.wb-account-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px}
+.wb-account-actions button,.wb-ledger-footer button{padding:3px 8px;font-size:12px}
+.wb-ledger-footer{display:flex;justify-content:flex-end;margin-top:10px;padding-top:8px;border-top:1px solid #ccd4dd}
+/* Room-specific robot message editor. */
+#admin-dialog.robot-dialog{width:min(900px,94vw);max-width:94vw;box-sizing:border-box}
+#admin-dialog.robot-dialog .robot-toolbar label{display:flex;align-items:center;gap:5px;margin:4px 0}
+#admin-dialog.robot-dialog .robot-toolbar input:not([type=checkbox]){width:160px;padding:5px;margin:0}
+#admin-dialog.robot-dialog input[type=checkbox]{width:auto;padding:0;margin:0 4px 0 0}
+#admin-dialog.robot-dialog .robot-enable{margin:8px 0 0}
+.robot-settings .robot-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.robot-settings .robot-toolbar label{display:flex;align-items:center;gap:5px}
+.robot-settings .robot-toolbar input[type=checkbox],.robot-settings .robot-enable input{width:auto;display:inline-block}
+.robot-settings .robot-phase{margin:18px 0 6px;padding:7px;background:#e8f0f7;color:#204969;font-size:15px}
+.robot-message-card{border:1px solid #cbd5df;border-radius:5px;margin:7px 0;padding:9px;background:#fff}
+.robot-message-card summary{cursor:pointer;font-weight:bold}
+.robot-message-card textarea{width:100%;box-sizing:border-box;resize:vertical;min-height:90px;font:14px/1.5 Arial,sans-serif;margin:8px 0}
+.robot-message-card .robot-enable{display:block;margin-top:8px}
+.robot-tokens{display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:12px;margin-bottom:8px}
+.robot-tokens button{font-size:12px;padding:3px 5px}
+.robot-message-card small{display:block;color:#6d7884;margin-top:8px}
+.robot-message-card pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f6f8;border:1px solid #e1e6eb;padding:8px;font:13px/1.5 Arial,sans-serif;max-height:200px;overflow:auto}
+.robot-save{position:sticky;bottom:0;display:flex;gap:10px;align-items:center;justify-content:space-between;background:#fff;padding:12px 0;border-top:1px solid #ccd6df}

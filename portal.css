@@ -1,0 +1,848 @@
+*{box-sizing:border-box}body{margin:0;color:#132236;background:#f4f4f6;font:15px/1.45 'Microsoft YaHei','Segoe UI',sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer;border:1px solid #d3dbe1;border-radius:5px;background:white;color:inherit;padding:8px 12px}button:hover{background:#edf4f7}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #238676;outline-offset:2px}button.primary,.primary{background:#208570;color:white;border-color:#208570}button.accent{color:#137c67;font-weight:700}input,textarea,select{border:1px solid #cdd6df;border-radius:5px;padding:9px;background:#fff;min-width:0;width:100%;color:#172d3a}textarea{resize:vertical;min-height:72px}label{display:block;margin:10px 0;font-size:13px;color:#4c6173}label input,label select,label textarea{display:block;margin-top:5px}h1,h2,h3,p{margin:0 0 14px}h2{font-size:19px}h3{font-size:15px;margin-top:22px}.note{font-size:12px;color:#71818e;line-height:1.7}.notice{padding:12px;background:#f3f7eb;border:1px solid #dfe9ca;border-radius:5px;font-size:13px;line-height:1.7;margin-bottom:14px}.empty{padding:25px;text-align:center;color:#7d8a94}.failure{padding:40px}.form-row{display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin-bottom:14px}.form-row>label{flex:1;min-width:120px;margin:0}.form-row button{flex-shrink:0}.check{display:flex!important;align-items:center;gap:7px}.check input{width:auto;margin:0}.table-scroll{overflow:auto;margin:10px 0 20px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px;border-bottom:1px solid #e4e9ec;text-align:left;white-space:nowrap}th{background:#f4f7f9;color:#68808f;font-size:12px}td button{padding:3px 8px}.summary{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.summary p{font-size:12px;color:#71818e;margin:5px 0}.summary .big-avatar{font-size:38px}.toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%);background:#174f46;color:white;border-radius:7px;padding:12px 20px;z-index:100;opacity:0;pointer-events:none;max-width:90vw;transition:opacity .15s}.toast.visible{opacity:1}.toast.error{background:#a73c3c}
+.portal{min-height:100vh;min-height:100dvh;background:radial-gradient(ellipse at 50% 35%,#206858,#102f35 75%);color:white;display:flex;flex-direction:column}.portal nav{display:flex;align-items:center;justify-content:space-between;padding:20px 30px;border-bottom:1px solid #ffffff18}.portal nav>div{display:flex;align-items:center;gap:10px}.portal nav button,.portal footer button{background:transparent;border-color:#ffffff30;color:#f0f8f5;font-size:12px}.portal nav span{font-size:13px;opacity:.75}.portal-card{width:min(500px,92vw);margin:auto;padding:45px 0;text-align:center}.emblem{font-size:56px;color:#d7bf7c;line-height:1}.portal-card h1{font-size:43px;letter-spacing:9px;margin:16px 0}.portal-card p{font-size:13px;color:#b8ceca;margin-bottom:34px}.room-buttons{display:grid;gap:16px}.room-buttons button{background:#963b3e;border-color:#b7675b;box-shadow:0 5px 16px #0002;color:#fff3e0;border-radius:6px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;font-size:18px;font-weight:600}.room-buttons button span:last-child{font-size:12px;font-weight:400;color:#efd7c1}.room-buttons button:hover{background:#aa4848}.portal-note{color:#9bb8b4;font-size:12px;margin-top:24px}.portal footer{padding:20px;text-align:center;font-size:12px;color:#9bb8b4}
+.room{height:100vh;height:100dvh;display:flex;flex-direction:column}.room-header{height:44px;flex-shrink:0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#f7fafc;border-bottom:1px solid #dce4ec;padding:0 8px;gap:8px}.room-header>button{background:none;border:0;padding:4px 0;text-align:left;font-size:15px}.room-header>b{font-size:15px;font-weight:500}.room-header .balance{text-align:right;color:#fb363a}.draw-strip{height:38px;flex-shrink:0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:#f7fafc;padding:0 10px;border-bottom:1px solid #dce4ec;font-size:14px}.draw-strip>button{padding:0;background:none;border:0;display:flex;gap:4px}.ball{display:inline-grid;place-items:center;color:white;font:normal bold 14px Georgia,serif;border-radius:50%;width:23px;height:23px;background:#e92835}.ball.b0{background:#009bdd}.ball.b2{background:#d71c32}.ball.b3{background:#6f43a8}#countdown{text-align:right;color:#ff333c}.source-strip{font-size:11px;color:#79868e;background:#fafbfd;display:flex;justify-content:space-between;padding:3px 11px;border-bottom:1px solid #e9ecef}.messages{flex:1;overflow-y:auto;padding:14px 10px 28px;scrollbar-color:#a8a8ac transparent}.message{display:flex;gap:11px;margin-bottom:14px}.avatar{width:45px;height:45px;font-size:30px;display:grid;place-items:center;background:#fff;border-radius:4px;flex-shrink:0}.message-body{max-width:calc(100% - 66px)}.message-name{font-size:13px;color:#ff5458;margin-bottom:4px}.message-name time{color:#a7afb6;margin-left:8px;font-size:10px}.bubble{white-space:pre-wrap;overflow-wrap:anywhere;display:inline-block;background:white;border:1px solid #cfd2d6;border-radius:6px;padding:7px 10px;line-height:1.42;color:#11233b;position:relative;font-size:15px;max-width:100%}.bubble:before{content:'';position:absolute;left:-5px;top:13px;width:7px;height:7px;border-left:1px solid #cfd2d6;border-bottom:1px solid #cfd2d6;background:white;transform:rotate(45deg)}.mine{flex-direction:row-reverse}.mine .message-name{text-align:right;color:#538675}.mine .bubble{background:#e9f5ef}.mine .bubble:before{left:auto;right:-5px;transform:rotate(225deg);background:#e9f5ef}.checklist{min-width:min(480px,70vw)}.room-bottom{background:#fbfcfd;border-top:1px solid #dce2e7;flex-shrink:0}.room-function-list{display:grid;gap:10px}.room-function-list button{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;text-align:left}.room-function-list button span{color:#71818e}.composer{display:flex;gap:8px;padding:9px 10px}.composer input{flex:1;background:white;font-size:15px}.composer select{width:85px}.composer>button:first-child{font-size:20px;padding:2px 10px}.composer>button:last-child{min-width:75px}.jump{position:fixed;bottom:72px;right:18px;border-radius:20px;background:#fffffff0;padding:6px 13px;font-size:12px;box-shadow:0 2px 10px #0001;color:#788691}
+.overlay[hidden]{display:none}.overlay{position:fixed;inset:0;background:#11233170;z-index:50;display:flex;justify-content:flex-end}.sheet{width:min(800px,100vw);height:100%;background:white;box-shadow:-10px 0 35px #0002;display:flex;flex-direction:column}.sheet>header{height:60px;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e3e8ec;flex-shrink:0}.sheet>header h2{margin:0}.sheet>header button{font-size:23px;border:0;padding:0 8px}#panel-body{padding:22px;overflow:auto;flex:1}.trend{display:flex;flex-wrap:wrap;gap:6px}.trend>div{display:flex;flex-direction:column;align-items:center;gap:5px;border:1px solid #e2e6eb;padding:7px}.trend small{color:#8b9baa;font-size:10px}.trend b{display:grid;place-items:center;border-radius:50%;width:28px;height:28px;background:#e54545;color:white}.trend span{font-size:11px;color:#748797}.trend .trend-1{background:#168fca}.trend .trend-2{background:#b44c9e}.trend .trend-3{background:#429548}
+.admin-page{max-width:1240px;margin:auto;padding:24px}.admin-page>header{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}.admin-page>header>div{display:flex;align-items:center;gap:16px}.admin-page h1{font-size:23px;margin:0}.admin-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.admin-tabs .active{background:#208570;color:white;border-color:#208570}.admin-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:start}.admin-card{border:1px solid #dfe6eb;border-radius:9px;background:white;padding:22px;margin-bottom:20px}.admin-card h2{border-bottom:1px solid #e4eaee;padding-bottom:12px}.admin-card h3{font-size:15px}.odds-edit{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.odds-edit input{padding:6px}.admin-card details{margin-top:20px}.admin-card summary{cursor:pointer;font-size:13px;color:#487e72}
+@media(max-width:700px){.portal nav{padding:14px}.portal nav span{display:none}.portal-card{padding:30px 12px}.portal-card h1{font-size:36px}.room-header{grid-template-columns:1.4fr auto 1fr}.room-header>button{font-size:12px}.room-header>b{font-size:12px}.source-strip{font-size:10px}.source-strip span:last-child{max-width:50%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.draw-strip{font-size:12px}.ball{width:18px;height:18px;font-size:12px}.draw-strip>button{gap:2px}.message-body{max-width:calc(100% - 58px)}.avatar{width:38px;height:38px;font-size:25px}.bubble{font-size:14px}.admin-page{padding:10px}.admin-page h1{font-size:17px}.admin-page>header>button{font-size:11px}.admin-grid{grid-template-columns:1fr}.admin-card{padding:15px}.odds-edit{grid-template-columns:repeat(3,1fr)}#panel-body{padding:16px}.composer{gap:5px}.composer>button:last-child{min-width:55px}.composer input{font-size:13px}.composer select{width:68px;font-size:12px}.form-row>label{min-width:95px}}
+.room-notice{font-size:11px;color:#826d41;background:#fffdf5;padding:4px 11px;border-bottom:1px solid #efeadb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0}
+.portal .notice{color:#cbded9;background:#ffffff09;border-color:#ffffff20}.room-buttons small{display:block;margin-bottom:5px;color:#ffddca}.portal footer{line-height:2}.room-header b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:20vw}.room-header #room-name{overflow:hidden;text-overflow:ellipsis}.room-header>button:first-child{overflow:hidden;white-space:nowrap}button:disabled{opacity:.5;cursor:not-allowed}.room-notice{white-space:normal;max-height:56px;overflow:auto}.portal-card>button{color:#245b50}.room .source-strip{min-height:23px}@media(max-width:420px){.draw-strip{grid-template-columns:auto 1fr auto;gap:6px}.draw-strip>button{justify-content:center}.ball{width:16px;height:16px;font-size:10px}.room-header{gap:5px}.portal-card h1{letter-spacing:4px}.portal nav>div{gap:5px}}
+.portal{position:relative;isolation:isolate;overflow:hidden;background:#510f12;color:#fff6dc}
+.portal:before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,#160c2e 0%,#5c101bea 20%,#871b16d9 43%,#a63b1138 68%,#380b12a8 100%),url('/portal-gold.jpg') center bottom/cover no-repeat}
+.portal:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 20%,#ffa82738,transparent 50%),radial-gradient(circle at 8% 15%,#ffc34c 0 1px,transparent 3px),radial-gradient(circle at 83% 12%,#ffc34c 0 2px,transparent 4px),radial-gradient(circle at 92% 40%,#ffc34c 0 1px,transparent 3px);background-size:auto,137px 173px,223px 191px,167px 229px;box-shadow:inset 0 0 130px #21071488}
+.portal nav{border-bottom:1px solid #f4b94650;background:#2a0b1a80;padding:16px 30px;color:#ffdf99}
+.portal nav button,.portal footer button{border-color:#e9b55b80;background:#6c141bb3;color:#fff1cd}
+.portal nav button:hover,.portal footer button:hover{background:#a22d32}
+.portal nav span{opacity:1;color:#ffe6b3}
+.portal-card{width:min(500px,92vw);margin:36px auto auto;padding:12px 16px 40px}
+.emblem{font-size:34px;color:#ffd786;text-shadow:0 0 22px #ffb42a}
+.portal-card h1{font-size:clamp(42px,6vw,66px);letter-spacing:4px;line-height:1.15;font-weight:900;margin:12px 0 16px;color:#fffdf4;text-shadow:0 3px 0 #7c171b,0 0 28px #ffba4766}
+.portal-card p{color:#ffe0a2;text-shadow:0 2px 5px #450409;margin-bottom:24px;font-size:14px;letter-spacing:2px}
+.room-buttons{gap:12px}
+.room-buttons button{min-height:70px;padding:13px 20px;border:1px solid #f2ba63;border-radius:4px;background:linear-gradient(180deg,#b33b3f,#922328);box-shadow:inset 0 1px #ffda9055,0 5px 16px #34030966;color:#fffdf3;font-size:23px;font-weight:800;text-shadow:0 1px 2px #680b12;gap:12px;text-align:left}
+.room-buttons button span:last-child{flex-shrink:0;color:#ffe9b3;font-size:12px;text-align:right}
+.room-buttons small{color:#ffe9b3;font-weight:500}
+.room-buttons button:hover{background:linear-gradient(180deg,#cc4845,#a52a2b);border-color:#ffe2a1;box-shadow:0 0 22px #efae4440}
+.portal button:focus-visible{outline:3px solid #ffe6a4;outline-offset:4px}
+.portal-note{display:inline-block;margin-top:20px;padding:5px 14px;border-radius:20px;color:#fff0cc;background:#4c0d16a8;font-size:12px}
+.portal footer{color:#ffe1ae;background:linear-gradient(transparent,#240714d9);padding:24px 16px 18px;text-shadow:0 1px 3px #320509}
+.portal .notice{color:#ffebbd;background:#6b1926dd;border-color:#e5b05b70}
+.room .source-strip,.room .room-notice{display:none}
+.portal-card>button{background:#a32d33;border-color:#efc276;color:#fff5db}
+@media(min-width:900px){.portal:before{background-size:auto,100% auto}.portal-card{margin-top:48px;margin-bottom:100px}}
+@media(max-width:700px){.portal nav{padding:12px 14px}.portal-card{margin-top:22px;padding:8px 10px 36px}.portal-card h1{font-size:48px}.room-buttons button{font-size:20px;padding:12px 16px;min-height:66px}.portal:before{background-size:auto,auto 70%;background-color:#651017}}
+@media(max-width:370px){.room-buttons button{font-size:17px;padding:12px}.portal-card h1{font-size:42px}}
+
+.portal-wallet{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:8px 14px;margin:18px auto 22px;padding:14px 18px;border:1px solid rgba(191,150,69,.4);border-radius:12px;background:rgba(255,246,207,.78);color:#674512}.portal-wallet strong{font-size:25px;font-variant-numeric:tabular-nums}.portal-wallet small{flex-basis:100%;font-size:12px;color:#876832}
+
+/* Draw cards share the same presentation in room messages and the history sheet. */
+.messages{min-height:0}
+.message.draw-message>.message-body{flex:1;min-width:0;max-width:min(320px,calc(100% - 56px))}
+.message.draw-message>.message-body>.bubble.draw-bubble{display:block;width:100%;padding:8px 7px;white-space:normal;overflow-wrap:normal;color:#1d252b}
+.draw-card,.draw-history,.roadmap{min-width:0;max-width:100%}
+.draw-card{--draw-ball-size:clamp(34px,10.3vw,49px)}
+.draw-card-heading{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-bottom:14px;line-height:1.25}
+.draw-card-heading strong{color:#e5222c;font-size:clamp(18px,5vw,25px);font-weight:800;white-space:nowrap}
+.draw-issue{min-width:0;text-align:right;font-size:clamp(13px,3.8vw,19px);font-family:Georgia,'Times New Roman',serif;font-style:italic;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.draw-card-result{display:flex;align-items:center;justify-content:center;gap:9px;margin:0 0 12px}
+.draw-number-line,.draw-outcomes{display:flex;align-items:center;justify-content:center;gap:4px;min-width:0}
+.draw-number{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:var(--draw-ball-size,22px);height:var(--draw-ball-size,22px);border:2px solid #f2222d;border-radius:50%;background:white;color:#131619;font-family:Georgia,'Times New Roman',serif;font-size:calc(var(--draw-ball-size,22px)*.8);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.draw-number.first{border-color:#38b3d5}
+.draw-number.selected{background:#e8f6ff;box-shadow:0 0 0 1px #176f97}
+.draw-special,.fan-tile{display:inline-flex;position:relative;align-items:center;justify-content:center;flex-shrink:0;width:var(--draw-ball-size,22px);height:var(--draw-ball-size,22px);color:#111;font-family:Arial,'Microsoft YaHei',sans-serif;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.draw-special{background:#36b5d9;color:white;font-size:calc(var(--draw-ball-size,22px)*.72)}
+.draw-outcomes .fan-tile{font-size:calc(var(--draw-ball-size,22px)*.72)}
+.draw-special small,.draw-outcomes .fan-tile small{position:absolute;right:2px;bottom:1px;font-size:9px;line-height:1;font-weight:400}
+.fan-1{background:#70a9fa;color:#111}
+.fan-2{background:#58d998;color:#111}
+.fan-3{background:#ffe329;color:#111}
+.fan-4{background:#ff454b;color:#111}
+.draw-number-line.eight-numbers{display:grid;grid-template-columns:repeat(4,var(--draw-ball-size));gap:5px}
+.draw-card.eight-ball-card{--draw-ball-size:clamp(28px,8.1vw,39px)}
+.draw-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:3px 9px;font-size:10px;color:#788087;margin:3px 0 6px;line-height:1.5;text-align:center}
+.draw-time{display:block;text-align:center;color:#202225;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(16px,4.6vw,24px);font-variant-numeric:tabular-nums;line-height:1.3;margin:8px 0 2px}
+.message.draw-message .draw-time{font-size:17px}
+.settlement-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding-bottom:7px;border-bottom:1px solid #dce5eb}
+.settlement-heading strong{font-size:15px;color:#253b4b}
+.settlement-heading>span{font-size:11px;color:#657783;overflow-wrap:anywhere;text-align:right}
+.settlement-note{font-size:10px;color:#71818e;line-height:1.5;margin:6px 0 9px}
+.settlement-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:4px;align-items:baseline;padding:5px 0;border-bottom:1px solid #edf0f2;font-size:12px;line-height:1.5;font-variant-numeric:tabular-nums}
+.settlement-row:last-child{border-bottom:0}
+.settlement-user{min-width:0;overflow-wrap:anywhere}
+.settlement-balance,.settlement-profit{white-space:nowrap;font-size:11px;text-align:right}
+.settlement-profit{font-weight:700}.settlement-profit.win{color:#c63c36}.settlement-profit.lose{color:#197e66}.settlement-profit.neutral{color:#6c7780}
+.settlement-profit small{display:block;font-size:9px;font-weight:400;color:#889199}
+.legacy-winners-title{font-size:12px;font-weight:700}.legacy-winners-note{font-size:10px;color:#788691;white-space:normal}
+.draw-history{margin-top:14px}
+.draw-history-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:#596771;margin:0 0 7px}
+.draw-history-heading button{border:0;padding:3px 0;background:transparent;color:#1c879b;font-size:11px;flex-shrink:0}
+.draw-history-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.draw-history-table{table-layout:fixed;width:100%;margin:0;border-collapse:collapse;color:#3b4348;font-size:11px;line-height:1.25;font-variant-numeric:tabular-nums}
+.draw-history-table th,.draw-history-table td{padding:3px 2px;border:0;text-align:center;vertical-align:middle;white-space:normal}
+.draw-history-table th{background:#38b4d7;color:white;font-size:12px;font-weight:700;padding:4px 2px}
+.draw-history-table th:first-child{width:25%}
+.draw-history-table th:nth-child(2){width:49%}
+.draw-history-table th:nth-child(3){width:10%}
+.draw-history-table th:nth-child(4){width:16%}
+.draw-history-table tbody tr:nth-child(even){background:#f7f8f8}
+.draw-history-table tr.latest>td{border-top:1px solid #ef4949;border-bottom:1px solid #ef4949;background:#fffdfb}
+.draw-history-table tr.latest>td:first-child{border-left:1px solid #ef4949}
+.draw-history-table tr.latest>td:last-child{border-right:1px solid #ef4949}
+.draw-period{font-size:10px;line-height:1.15;color:#647078;overflow-wrap:anywhere}
+.draw-row-source{display:block;color:#7a858c;font-size:9px;line-height:1.3;margin-top:2px}
+.draw-original-context{display:block;font-size:10px;color:#71818e;margin-bottom:4px;white-space:normal}
+.draw-history-table time{display:block;font-size:10px;color:#727b81;white-space:nowrap;margin-top:1px}
+.draw-small-numbers{--draw-ball-size:18px;display:inline-flex;gap:1px;vertical-align:middle;white-space:nowrap}
+.draw-small-numbers .draw-number{border-width:1px;font-size:14px;font-weight:400}
+.draw-equals{display:inline-block;vertical-align:middle;font-size:11px;margin:0 3px}
+.draw-special-text{display:inline-block;vertical-align:middle;font-size:11px;white-space:nowrap}
+.draw-history-table .fan-tile{--draw-ball-size:20px;border:1px solid #444;font-size:18px}
+.draw-history-table.eight-balls .draw-small-numbers{--draw-ball-size:16px;display:inline-grid;grid-template-columns:repeat(4,16px);gap:2px 1px}
+.draw-history-table.eight-balls .draw-small-numbers .draw-number{font-size:12px}
+.draw-history-table.eight-balls .draw-equals{margin-left:2px;margin-right:2px}
+.draw-history-table.compact th:first-child{width:28%}
+.draw-history-table.compact th:nth-child(2){width:45%}
+.draw-history-table.compact th:nth-child(4){width:17%}
+.draw-history-table.compact td{padding-top:1px;padding-bottom:1px}
+.draw-history-table.compact td:first-child{white-space:nowrap}
+.draw-history-table.compact .draw-period{display:inline-block;margin-right:5px;font-size:10px}
+.draw-history-table.compact time{display:inline;font-size:10px}
+.draw-history-table.compact .draw-row-source{display:inline-block;margin:0 0 0 2px;font-size:9px}
+.draw-history-table.compact .draw-equals{margin:0 1px}
+.draw-history-table.compact .fan-tile{--draw-ball-size:18px;font-size:16px}
+.roadmap{margin-top:12px}
+.roadmap h3{margin:0;padding:3px 8px;border:1px solid #8e9396;border-bottom:0;background:#d5d6d7;color:#111;text-align:center;letter-spacing:8px;text-indent:8px;font-size:13px;font-weight:700;line-height:1.5}
+.roadmap-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2px;padding:2px;border:1px solid #8e9396;background:#f0f0ef}
+.roadmap-cell{display:flex;align-items:center;justify-content:center;min-width:0;aspect-ratio:1;border:1px solid #62686c;font-size:clamp(12px,3.8vw,21px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.roadmap-cell.latest{outline:2px solid #e42630;outline-offset:1px;position:relative;z-index:1}
+.roadmap-cell.blank{background:#f7f7f5;border-color:#d3d5d6}
+.roadmap-cell.invalid{background:#eee;color:#777}
+.recent-trend{margin-top:9px;padding-top:7px;border-top:1px dashed #c2c9ce}
+.recent-trend h4{margin:0 0 6px;font-size:11px;font-weight:600;color:#485763}
+.recent-trend-results{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:5px 4px;list-style:none;margin:0;padding:0}
+.recent-trend-result{position:relative;display:flex;align-items:center;justify-content:center;min-width:0}
+.recent-trend-result:not(:nth-child(9n)):not(:last-child):after{content:'›';position:absolute;right:-4px;color:#a0a8ad;font-size:11px}
+.trend-value{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border:1px solid #81888d;border-radius:3px;font-size:14px;font-weight:700;line-height:1}
+.recent-trend-result.latest .trend-value{outline:1px solid #df3039;outline-offset:1px}
+.trend-value.invalid{background:#eee;color:#777}
+.roadmap-note,.draw-context{font-size:10px;color:#7a858c;line-height:1.5;margin:6px 0 0;overflow-wrap:anywhere}
+.draw-phase{margin:10px 0 0;padding-top:9px;border-top:1px dashed #bec6cc;font-size:13px;color:#253b4b;overflow-wrap:anywhere}
+.history-view{max-width:680px;margin:0 auto}
+.history-view>.draw-card{border:1px solid #d4dadd;border-radius:6px;padding:14px 12px;background:#fff}
+.history-view>.draw-history{margin-top:20px}
+.history-view .draw-history-table{font-size:13px}
+.history-view .draw-history-table th{font-size:13px}
+.history-view .draw-history-table td{padding-top:5px;padding-bottom:5px}
+.history-view .draw-period,.history-view .draw-history-table time{font-size:11px}
+.history-view .draw-small-numbers{--draw-ball-size:22px;gap:2px}
+.history-view .draw-small-numbers .draw-number{font-size:16px}
+.history-view .roadmap-cell{font-size:18px}
+.history-view>.roadmap,.history-view>.draw-history>.roadmap{max-width:320px;margin-left:auto;margin-right:auto}
+@media(max-width:700px){.message.draw-message>.message-body{max-width:min(320px,calc(100% - 49px))}}
+@media(max-width:380px){.message.draw-message>.message-body>.bubble.draw-bubble{padding:9px 6px}.draw-card-result{gap:7px}.draw-history-table th{font-size:11px}.draw-small-numbers{--draw-ball-size:17px}.draw-small-numbers .draw-number{font-size:13px}.draw-equals{margin:0 2px}.draw-special-text{font-size:10px}.draw-history-table.eight-balls .draw-small-numbers{--draw-ball-size:15px;grid-template-columns:repeat(4,15px)}.draw-history-table.eight-balls .draw-small-numbers .draw-number{font-size:11px}.history-view .draw-small-numbers{--draw-ball-size:20px}}
+
+.a8-closing-rules{display:block;font-weight:700;line-height:1.8;white-space:normal}.a8-rule-line{display:block;color:#3544bd}.a8-rule-0{color:#26834a}.a8-rule-1{color:#c83348}
+
+/* Keep every result ball circular and its digits upright, including narrow screens. */
+.ball,.draw-number{box-sizing:border-box;aspect-ratio:1/1;flex-shrink:0;padding:0;font-family:Arial,'Microsoft YaHei',sans-serif;font-style:normal;font-variant-numeric:lining-nums tabular-nums;letter-spacing:0;line-height:1;text-align:center;border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
+.draw-number{min-width:var(--draw-ball-size,22px);max-width:var(--draw-ball-size,22px);min-height:var(--draw-ball-size,22px);max-height:var(--draw-ball-size,22px);font-size:calc(var(--draw-ball-size,22px)*.65)}
+.draw-small-numbers .draw-number{font-size:calc(var(--draw-ball-size,18px)*.68);font-weight:400}
+.draw-history-table.eight-balls{min-width:260px}
+.draw-history-table.eight-balls th:first-child{width:22%}
+.draw-history-table.eight-balls th:nth-child(2){width:57%}
+.draw-history-table.eight-balls th:nth-child(3){width:8%}
+.draw-history-table.eight-balls th:nth-child(4){width:13%}
+.draw-history-table.eight-balls .draw-small-numbers{--draw-ball-size:16px;display:inline-flex;flex-wrap:nowrap;align-items:center;gap:1px}
+.draw-history-table.eight-balls .draw-small-numbers .draw-number{font-size:11px}
+.draw-history-table.eight-balls td:first-child .draw-period,.draw-history-table.eight-balls td:first-child time{display:block;margin:0}
+.draw-history-table.eight-balls .draw-special-text{display:block;margin-top:2px}
+.draw-history-table.eight-balls .draw-equals{display:none}
+.draw-number-line.eight-numbers{display:flex;flex-wrap:nowrap;gap:3px}
+.draw-card.eight-ball-card{--draw-ball-size:clamp(20px,5vw,32px)}
+.draw-card.eight-ball-card .draw-card-result{flex-direction:column}
+.draw-card.eight-ball-card .draw-outcomes{--draw-ball-size:36px}
+.draw-card.eight-ball-card .draw-outcomes .draw-special,.draw-card.eight-ball-card .draw-outcomes .fan-tile{flex-direction:column;font-size:22px}
+.draw-card.eight-ball-card .draw-outcomes small{position:static;font-size:9px;line-height:1}
+@media(min-width:600px){.history-view .draw-history-table.eight-balls .draw-small-numbers{--draw-ball-size:22px;gap:2px}.history-view .draw-history-table.eight-balls .draw-small-numbers .draw-number{font-size:15px}}
+
+/* Australia8: one result message with eight per-ball results and 15 aligned rounds. */
+.a8-draw-bundle{width:100%;max-width:440px;margin:auto;color:#14191d;font-family:Arial,'Microsoft YaHei',sans-serif}
+.a8-current-result header{display:flex;align-items:center;justify-content:space-between;gap:6px;line-height:1.3}
+.a8-current-result header strong{color:#ec191e;font-size:23px;white-space:nowrap}
+.a8-current-result header>span{font-size:12px;overflow-wrap:anywhere}
+.a8-result-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0}
+.a8-result-meta>span{font-size:14px}.a8-result-meta small{display:block;font-size:9px;color:#77818b;margin-top:4px}
+.a8-main-fan{display:flex;align-items:center;justify-content:center;min-width:56px;height:54px;padding:0 5px;font-size:32px;line-height:1}
+.a8-main-fan.fan-4{background:#f00000;color:white}
+.a8-ball-columns{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:2px}
+.a8-ball-columns>div{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
+.a8-ball-columns small{font-size:10px;color:#6b747d}
+.a8-number,.a8-ball-fan{display:inline-flex;align-items:center;justify-content:center;flex:none;box-sizing:border-box;width:25px;height:25px;aspect-ratio:1;border-radius:50%;font-size:17px;font-weight:400;line-height:1;font-style:normal;font-variant-numeric:tabular-nums}
+.a8-number{border:1px solid #25acd0;background:white;color:#111}.a8-number.special{border-color:#e63842}
+.a8-ball-fan{font-weight:700;border:1px solid #c6c6c6}
+.a8-result-note{font-size:9px;line-height:1.5;color:#7a838b;margin:6px 0 0}
+.a8-history,.a8-roadmap{margin-top:14px}
+.a8-history h3{font-size:11px;font-weight:500;color:#64727d;margin:0 0 5px}
+.a8-results-table,.a8-road-table{table-layout:fixed;width:100%;border-collapse:collapse;margin:0;line-height:1.1}
+.a8-results-table th,.a8-results-table td{padding:3px 0;border:0;text-align:center;vertical-align:middle;white-space:nowrap;font-size:10px}
+.a8-results-table th{background:#12b9e8;color:#101419;font-size:10px}
+.a8-results-table th:first-child,.a8-results-table th:nth-child(2){white-space:normal}
+.a8-results-table .a8-number{width:17px;height:17px;font-size:11px}
+.a8-results-table .a8-clock{font-size:8px}.a8-results-table .a8-shape{font-size:9px;white-space:normal}
+.a8-results-table tbody tr:nth-child(even){background:#f5f6f7}
+.a8-results-table tbody tr:first-child{outline:1px solid #e42a30;outline-offset:-1px}
+.a8-history-fan{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;font-size:15px;font-weight:700}
+.a8-roadmap h3{margin:0;padding:7px 0;background:#d6d6d6;border:1px solid #666;border-bottom:0;text-align:center;font-size:22px;letter-spacing:8px;text-indent:8px;color:#111}
+.a8-road-table th,.a8-road-table td{border:1px solid #666;text-align:center;padding:2px;font-size:12px;white-space:nowrap}
+.a8-road-table th{background:#d6d6d6;color:#111;font-weight:700;padding:7px 1px}
+.a8-road-table th:first-child{width:11%}
+.a8-road-fan{display:flex;align-items:center;justify-content:center;aspect-ratio:1;width:100%;border:1px solid #747474;font-size:20px;line-height:1}
+.a8-road-table .a8-period{font-size:13px}
+@media(max-width:360px){.a8-number,.a8-ball-fan{width:22px;height:22px;font-size:15px}.a8-results-table .a8-number{width:15px;height:15px;font-size:10px}.a8-history-fan{width:15px;height:15px;font-size:13px}.a8-results-table .a8-clock{font-size:7px}.a8-results-table .a8-shape{font-size:8px}.a8-road-table th{font-size:10px}.a8-road-fan{font-size:17px}.a8-current-result header strong{font-size:20px}}
+.composer #ball-select{width:82px;flex:0 0 82px;padding:6px 3px;font-size:12px;background:#fff;color:#172d3a}
+.composer.has-ball-select #message-input{width:0;min-width:0;flex:1}
+
+/* Compact only the draw messages; full history panels keep their reading size. */
+.message.draw-message>.message-body{max-width:min(280px,calc(100% - 49px))}
+.message.draw-message>.message-body>.bubble.draw-bubble{padding:6px 5px}
+.draw-message .a8-current-result header strong{font-size:20px}
+.draw-message .a8-current-result header>span{font-size:10px}
+.draw-message .a8-result-meta{margin:6px 0;gap:6px}
+.draw-message .a8-result-meta>span{font-size:12px}
+.draw-message .a8-main-fan{min-width:48px;height:46px;font-size:28px}
+.draw-message .a8-ball-columns{gap:1px}
+.draw-message .a8-ball-columns>div{gap:3px}
+.draw-message .a8-number,.draw-message .a8-ball-fan{width:22px;height:22px;font-size:15px}
+.draw-message .a8-history,.draw-message .a8-roadmap{margin-top:10px}
+.draw-message .a8-results-table th,.draw-message .a8-results-table td{padding:2px 0;font-size:9px}
+.draw-message .a8-results-table .a8-number{width:15px;height:15px;font-size:10px}
+.draw-message .a8-results-table .a8-clock{font-size:7px}
+.draw-message .a8-results-table .a8-shape{font-size:8px}
+.draw-message .a8-history-fan{width:15px;height:15px;font-size:13px}
+.draw-message .a8-roadmap h3{font-size:19px;padding:5px 0;letter-spacing:6px;text-indent:6px}
+.draw-message .a8-road-table th{font-size:10px;padding:5px 1px}
+.draw-message .a8-road-table td{padding:2px}
+.draw-message .a8-road-table .a8-period{font-size:11px}
+.draw-message .a8-road-fan{font-size:18px}
+.draw-message .draw-history{margin-top:10px}
+.draw-message .draw-small-numbers{--draw-ball-size:16px}
+.draw-message .draw-small-numbers .draw-number{font-size:11px}
+.draw-message .draw-history-table th{font-size:10px}
+.draw-message .draw-history-table .draw-period,.draw-message .draw-history-table time{font-size:9px}
+.draw-message .roadmap{margin-top:9px}
+.draw-message .roadmap-cell{font-size:17px}
+/* Screenshot-inspired inline quick keyboard shared by all rooms. */
+.quick-keyboard{padding:6px 8px 3px;background:#f2f5f7;border-top:1px solid #d6dfe5;max-height:170px;overflow:auto}
+.quick-keyboard-row{display:flex;justify-content:center;gap:4px;margin-bottom:4px}
+.quick-keyboard button{flex:0 0 calc((100% - 36px)/10);width:calc((100% - 36px)/10);height:30px;min-height:30px;max-height:30px;box-sizing:border-box;padding:3px 2px;border-radius:4px;background:#fff;border:1px solid #ccd7de;color:#162f3d;font-weight:600;font-size:13px;line-height:1;appearance:none;-webkit-appearance:none;transform:none;transition:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.quick-keyboard button:hover,.quick-keyboard button:active,.quick-keyboard button:focus{background:#dff2ec;border-color:#208570;color:#146c5c;transform:none;min-height:30px;height:30px;max-height:30px}
+.composer .keyboard-toggle{font-size:19px;padding:2px 9px;line-height:1;color:#536b78;background:#fff}
+.composer .keyboard-toggle.active{background:#208570;color:#fff;border-color:#208570}
+@media(max-width:700px){.quick-keyboard{max-height:185px;padding:5px 6px 2px}.quick-keyboard-row{gap:3px}.quick-keyboard button{flex-basis:calc((100% - 27px)/10);width:calc((100% - 27px)/10);height:29px;min-height:29px;max-height:29px;font-size:12px;padding:2px 1px}.quick-keyboard button:hover,.quick-keyboard button:active,.quick-keyboard button:focus{height:29px;min-height:29px;max-height:29px}.composer .keyboard-toggle{font-size:18px;padding:2px 8px}}
+
+/* Multi-line batch entry keeps the compact composer height by default. */
+.composer textarea{flex:1;min-height:40px;height:40px;max-height:120px;resize:vertical;background:white;font-size:15px;line-height:20px}
+@media(max-width:700px){.composer textarea{font-size:13px}}
+
+/* Final narrow-screen layout: keep the room inside the device viewport. */
+@media(max-width:480px){
+  html,body,#app{width:100%;max-width:100%;overflow-x:hidden}
+  .portal nav{padding:10px 12px}
+  .portal nav b{font-size:14px}
+  .portal-card{width:100%;margin-top:14px;padding:8px 12px 28px}
+  .portal-card h1{font-size:34px;letter-spacing:3px;margin:10px 0 12px}
+  .portal-card p{font-size:12px;margin-bottom:20px}
+  .room-buttons{gap:10px}
+  .room-buttons button{min-height:54px;padding:10px 12px;font-size:16px}
+  .room-buttons button span:last-child{font-size:11px}
+  .room{width:100%;min-width:0;height:100dvh}
+  .room-header{height:40px;padding:0 6px;gap:4px}
+  .room-header>button,.room-header>b{font-size:11px}
+  .room-header .balance{font-size:11px}
+  .draw-strip{height:34px;padding:0 6px;gap:4px;font-size:11px}
+  .draw-strip>button{min-width:0}
+  .messages{padding:8px 6px 18px}
+  .message{gap:6px;margin-bottom:9px}
+  .avatar{width:30px;height:30px;font-size:20px}
+  .message-body{max-width:calc(100% - 36px)}
+  .message-name{font-size:11px;margin-bottom:2px}
+  .message-name time{margin-left:4px;font-size:9px}
+  .bubble{font-size:13px;padding:5px 7px}
+  .message.draw-message>.message-body{max-width:calc(100% - 36px)}
+  .message.draw-message>.message-body>.bubble.draw-bubble{padding:6px 5px}
+  .draw-card{--draw-ball-size:clamp(25px,8.4vw,36px)}
+  .draw-card.eight-ball-card{--draw-ball-size:clamp(18px,5vw,25px)}
+  .draw-card-heading{margin-bottom:8px}
+  .draw-card-heading strong{font-size:17px}
+  .draw-issue{font-size:12px}
+  .draw-card-result{gap:5px;margin-bottom:8px}
+  .draw-number-line,.draw-outcomes{gap:2px}
+  .draw-special,.fan-tile{font-size:15px}
+  .draw-special small,.fan-tile small{font-size:8px}
+  .draw-meta,.draw-time{font-size:9px}
+  .draw-history-table{font-size:10px}
+  .draw-history-table th{font-size:10px;padding:3px 1px}
+  .draw-history-table td{padding:2px 1px}
+  .roadmap-cell{font-size:13px}
+  .roadmap h3{font-size:12px;letter-spacing:5px}
+  .sheet{width:100vw}
+  #panel-body{padding:10px}
+  .history-view{width:100%;max-width:none}
+  .history-view>.draw-card{padding:9px 6px}
+  .composer{gap:3px;padding:4px 6px}
+  .composer .keyboard-toggle{padding:2px 6px;font-size:17px}
+  .composer textarea{font-size:13px;height:38px;min-height:38px}
+  .composer select,.composer #ball-select{width:58px;flex-basis:58px;padding:5px 2px;font-size:11px}
+  .composer>button:last-child{min-width:48px;padding:6px 7px;font-size:13px}
+  .jump{right:8px;bottom:60px;padding:5px 9px}
+}
+
+@media(max-width:360px){
+  .portal-card h1{font-size:30px}
+  .room-buttons button{font-size:15px;padding:9px 10px}
+  .draw-card.eight-ball-card{--draw-ball-size:18px}
+  .draw-number{font-size:12px}
+  .draw-card-result{gap:3px}
+  .a8-current-result header strong{font-size:17px}
+  .a8-number,.a8-ball-fan{width:19px;height:19px;font-size:12px}
+  .a8-results-table th,.a8-results-table td{font-size:8px}
+  .a8-road-table th{font-size:9px}
+  .a8-road-fan{font-size:14px}
+}
+
+/* Australia8 highlights the current member's selected/bet ball positions. */
+.ball.a8-normal-ball,.a8-number.a8-normal-ball{background:#119ed5;border-color:#119ed5;color:#fff}
+.ball.a8-selected-ball,.a8-number.a8-selected-ball{background:#e53945;border-color:#e53945;color:#fff}
+
+/* Reduce Australia8 chat card whitespace on phones; keep full history readable. */
+@media(max-width:600px){
+  .message.draw-message.a8-draw-message>.message-body{max-width:min(258px,calc(100% - 49px))}
+  .message.draw-message.a8-draw-message>.message-body>.draw-bubble{padding:4px}
+  .draw-message .a8-current-result header{gap:3px;line-height:1.1}
+  .draw-message .a8-current-result header strong{font-size:16px}
+  .draw-message .a8-current-result header>span{font-size:9px}
+  .draw-message .a8-result-meta{margin:3px 0;gap:3px}
+  .draw-message .a8-result-meta>span{font-size:11px;line-height:1.2}
+  .draw-message .a8-result-meta small{margin-top:1px;font-size:8px}
+  .draw-message .a8-main-fan{min-width:34px;height:30px;padding:0 3px;font-size:22px}
+  .draw-message .a8-ball-columns>div{gap:1px}
+  .draw-message .a8-ball-columns small{font-size:9px;line-height:1.1}
+  .draw-message .a8-number,.draw-message .a8-ball-fan{width:20px;height:20px;font-size:13px}
+  .draw-message .a8-result-note{margin:3px 0 0;font-size:8px;line-height:1.2}
+  .draw-message .a8-history,.draw-message .a8-roadmap{margin-top:5px}
+  .draw-message .a8-history h3{margin:0 0 2px;font-size:10px;line-height:1.2}
+  .draw-message .a8-results-table th,.draw-message .a8-results-table td{padding:1px 0}
+  .draw-message .a8-results-table .a8-number{width:15px;height:15px;font-size:10px}
+  .draw-message .a8-roadmap h3{font-size:15px;padding:3px 0;letter-spacing:4px;text-indent:4px}
+  .draw-message .a8-road-table th{padding:3px 0;font-size:9px}
+  .draw-message .a8-road-table td{padding:1px}
+  .draw-message .a8-road-table .a8-period{font-size:10px}
+  .draw-message .a8-road-fan{height:19px;aspect-ratio:auto;font-size:15px}
+}
+
+/* Center the keyboard icon without platform-dependent emoji metrics. */
+.composer>button.keyboard-toggle{display:grid;place-items:center;box-sizing:border-box;flex:0 0 32px;width:32px;min-width:32px;padding:0;line-height:1}
+.composer .keyboard-icon{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+
+/* Keep the composer inside the visible area above the mobile system keyboard. */
+@media(max-width:700px){
+  .room{position:fixed;top:var(--room-viewport-top,0px);left:var(--room-viewport-left,0px);width:var(--room-viewport-width,100%);height:var(--room-viewport-height,100vh);min-height:0;margin:0;overflow:hidden}
+  .room-bottom{min-width:0;max-width:100%}
+  .composer{display:grid;grid-template-columns:32px minmax(0,1fr) 48px;gap:3px;width:100%;box-sizing:border-box;padding:4px 6px;padding-bottom:max(4px,env(safe-area-inset-bottom))}
+  .composer.has-ball-select{grid-template-columns:32px minmax(0,1fr) 74px 48px}
+  .composer textarea,.composer.has-ball-select #message-input{width:100%;min-width:0;max-width:100%;height:38px;min-height:38px;max-height:76px;resize:none;font-size:16px;line-height:22px;box-sizing:border-box}
+  .composer #ball-select{width:74px;min-width:0;max-width:100%;padding:4px 0;font-size:16px;box-sizing:border-box}
+  .composer .keyboard-toggle{min-width:0;width:32px;padding:2px;font-size:17px}
+  .composer>button:last-child{width:48px;min-width:48px;padding:4px;font-size:14px}
+  .quick-keyboard{max-height:min(170px,calc(var(--room-viewport-height,100vh)*.33))}
+  .sheet input,.sheet select,.sheet textarea{font-size:16px}
+}
+
+.bubble .close-footer{color:#e92835}
+
+/* Canada28 / Australia3: current result and 15 historical draws, no roadmap. */
+.message.draw-message.sum-draw-message>.message-body{max-width:min(272px,calc(100% - 49px))}
+.message.draw-message.sum-draw-message>.message-body>.draw-bubble{padding:8px 6px}
+.sum-draw-bundle{font-family:Arial,"Microsoft YaHei",sans-serif;color:#00315b;line-height:1.4}
+.sum-draw-bundle header{display:flex;justify-content:space-between;align-items:center;gap:4px}
+.sum-draw-bundle header h3{font-size:19px;color:#ff2424;margin:0;line-height:1.3}
+.sum-draw-bundle header>span{font-size:9px;color:#001628}
+.sum-result-meta{display:flex;justify-content:space-between;align-items:center;margin:10px 0;font-size:12px}
+.sum-result-meta small{display:block;font-size:9px;color:#7f8c9c;margin-top:5px}
+.sum-main-fan{width:49px;height:45px;display:grid;place-items:center;font-size:27px;font-weight:bold}
+.sum-number-line{display:flex;align-items:center;justify-content:center;gap:9px;margin:12px 0 10px}
+.sum-number{width:30px;height:30px;border-radius:50%;background:#06acd5;color:#fff;display:inline-flex;justify-content:center;align-items:center;font-size:21px;line-height:1;flex-shrink:0;font-variant-numeric:tabular-nums}
+.sum-sign{color:#7f8d9b;font-size:17px}.sum-total{font-size:24px;color:#122e40}
+.sum-result-tags{display:flex;justify-content:center;gap:8px;margin:0 0 10px}
+.sum-result-tags>span{min-width:40px;text-align:center;font-size:13px;padding:4px 9px;border:1px solid #d3e6ec;border-radius:3px;background:#eff9fc}
+.sum-result-tags>span:first-child{font-weight:bold}
+.sum-result-note{font-size:9px;color:#748397;margin:0 0 12px}
+.sum-draw-history h4{font-size:10px;font-weight:normal;margin:0 0 5px;color:#657887}
+.sum-draw-history table{border-collapse:collapse;table-layout:fixed;width:100%;min-width:0;font-size:9px;color:#001a2c}
+.sum-draw-history thead{background:#0fb4d6}
+.sum-draw-history th{background:#0fb4d6;font-size:9px;font-weight:normal;padding:4px 0;text-align:center;white-space:nowrap}
+.sum-draw-history td{padding:2px 0;text-align:center;height:21px;border-bottom:1px solid #e5e7ea;white-space:nowrap}
+.sum-draw-history tbody tr:nth-child(even){background:#f5f6f7}
+.sum-draw-history tbody tr:first-child{outline:1px solid #ff6972;outline-offset:-1px}
+.sum-mini-numbers{display:flex;align-items:center;justify-content:center;gap:3px}
+.sum-mini-numbers .sum-number{width:15px;height:15px;font-size:10px}
+.sum-fan{width:18px;height:18px;display:inline-grid;place-items:center;font-size:14px;font-weight:bold;line-height:1}
+.sum-result-footer{font-size:9px;margin:7px 0 0;color:#8492a2}
+@media(max-width:350px){.sum-number-line{gap:6px}.sum-draw-history th,.sum-draw-history td{font-size:8px}}
+
+/* Keep the input focus ring within its original dimensions. */
+.composer #message-input:focus-visible{outline-offset:-2px}
+
+/* Mobile room layout follows the compact chat proportions used in the
+   reference view: readable bubbles, larger avatars and a touch-friendly
+   quick keyboard without changing the desktop layout. */
+@media(max-width:700px){
+  .messages{padding:12px 8px 22px}
+  .message{gap:8px;margin-bottom:12px}
+  .avatar{width:42px;height:42px;font-size:27px;border-radius:5px}
+  .message-body{max-width:calc(100% - 50px)}
+  .message-name{font-size:14px;margin-bottom:3px}
+  .message-name time{font-size:10px;margin-left:5px}
+  .bubble{font-size:16px;line-height:1.5;padding:7px 10px;border-radius:7px}
+  .message.draw-message>.message-body{max-width:calc(100% - 50px)}
+  .quick-keyboard{max-height:min(210px,calc(var(--room-visible-height,100vh)*.38));padding:6px 7px 4px}
+  .quick-keyboard-row{gap:3px;margin-bottom:4px}
+  .quick-keyboard button{flex-basis:calc((100% - 27px)/10);width:calc((100% - 27px)/10);height:40px;min-height:40px;max-height:40px;padding:3px 2px;font-size:19px;border-radius:4px}
+  .quick-keyboard button:hover,.quick-keyboard button:active,.quick-keyboard button:focus{height:40px;min-height:40px;max-height:40px}
+  .composer{grid-template-columns:38px minmax(0,1fr) 54px;gap:4px;padding:5px 7px}
+  .composer.has-ball-select{grid-template-columns:38px minmax(0,1fr) 78px 54px}
+  .composer textarea,.composer.has-ball-select #message-input{height:42px;min-height:42px;font-size:16px;line-height:23px}
+  .composer #ball-select{width:78px;font-size:16px}
+  .composer .keyboard-toggle{width:38px;min-width:38px;padding:2px;color:#d7861d}
+  .composer .keyboard-toggle.active{background:#d7861d;border-color:#d7861d;color:#fff}
+  .composer>button:last-child{width:54px;min-width:54px;padding:5px 7px;font-size:16px}
+}
+
+/* Move the room with the software keyboard without resizing its chat history. */
+@media(max-width:700px){
+  html.room-page,html.room-page body{overflow:hidden;overscroll-behavior:none}
+  .room{overflow-anchor:none}
+  .room>.jump{position:absolute}
+  .quick-keyboard{max-height:min(170px,calc(var(--room-visible-height,100vh)*.33))}
+}
+
+/* Keep the latest draw numbers prominent and consistent across all rooms. */
+.draw-strip>button{gap:5px}
+.draw-strip .ball{width:26px;height:26px;font-size:16px}
+@media(max-width:700px){.draw-strip .ball{width:22px;height:22px;font-size:14px}}
+@media(max-width:420px){.draw-strip .ball{width:20px;height:20px;font-size:13px}}
+
+/* Compact mobile quick keyboard: keep all four rows visible above the
+   phone keyboard, with fixed dimensions so tapping never changes layout. */
+@media(max-width:700px){
+  .quick-keyboard{
+    max-height:108px;
+    padding:4px 5px 3px;
+    overflow:hidden;
+  }
+  .quick-keyboard-row{gap:2px;margin-bottom:2px}
+  .quick-keyboard-row:last-child{margin-bottom:0}
+  .quick-keyboard button,
+  .quick-keyboard button:hover,
+  .quick-keyboard button:active,
+  .quick-keyboard button:focus{
+    flex-basis:calc((100% - 18px)/10);
+    width:calc((100% - 18px)/10);
+    height:24px;
+    min-height:24px;
+    max-height:24px;
+    padding:1px;
+    border-radius:3px;
+    font-size:12px;
+    line-height:20px;
+    transform:none;
+  }
+  .composer{grid-template-columns:30px minmax(0,1fr) 46px;gap:2px;padding:3px 5px}
+  .composer.has-ball-select{grid-template-columns:30px minmax(0,1fr) 68px 46px}
+  .composer textarea,.composer.has-ball-select #message-input{
+    height:34px;min-height:34px;max-height:34px;font-size:14px;line-height:20px
+  }
+  .composer .keyboard-toggle{width:30px;min-width:30px;padding:1px}
+  .composer .keyboard-icon{width:18px;height:18px}
+  .composer #ball-select{width:68px;font-size:14px;padding:2px 0}
+  .composer>button:last-child{width:46px;min-width:46px;padding:3px 4px;font-size:13px}
+}
+
+@media(max-width:380px){
+  .quick-keyboard{max-height:104px;padding-left:3px;padding-right:3px}
+  .quick-keyboard button,
+  .quick-keyboard button:hover,
+  .quick-keyboard button:active,
+  .quick-keyboard button:focus{
+    flex-basis:calc((100% - 18px)/10);
+    width:calc((100% - 18px)/10);
+    font-size:11px;
+  }
+}
+
+/* Final mobile composer geometry.  The visible room height already follows
+   visualViewport, so the composer can sit at the room's bottom edge without
+   using a stale keyboard-height offset. */
+@media(max-width:700px){
+  html.room-system-keyboard .room{
+    position:fixed!important;
+    top:0!important;
+    left:0!important;
+    width:100%!important;
+    height:var(--room-visible-height,100dvh)!important;
+    min-height:0!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+  html.room-system-keyboard .room-bottom{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:0!important;
+    z-index:50!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .messages{
+    padding-bottom:calc(68px + env(safe-area-inset-bottom))!important;
+  }
+  html.room-system-keyboard .jump{display:none!important}
+  html.room-system-keyboard .quick-keyboard{display:none!important}
+  html.room-system-keyboard .composer{
+    display:grid!important;
+    grid-template-columns:44px minmax(0,1fr) 92px!important;
+    gap:4px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+    padding:6px 7px!important;
+    overflow:hidden!important;
+  }
+  html.room-system-keyboard .composer.has-ball-select{
+    grid-template-columns:44px minmax(0,1fr) 112px 92px!important;
+  }
+  html.room-system-keyboard .composer #message-input{
+    width:auto!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:42px!important;
+    min-height:42px!important;
+    max-height:42px!important;
+    flex:none!important;
+    box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .composer #ball-select{
+    width:112px!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:42px!important;
+    box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .composer .keyboard-toggle{
+    width:44px!important;
+    min-width:44px!important;
+    height:42px!important;
+    padding:0!important;
+  }
+  html.room-system-keyboard .composer>button:last-child{
+    width:92px!important;
+    min-width:92px!important;
+    height:42px!important;
+    padding:4px 8px!important;
+    box-sizing:border-box!important;
+  }
+}
+
+/* The native phone keyboard must not reflow the room.  Pin the ordinary
+   composer to the bottom edge of the visual viewport so its send button,
+   ball selector, and chat controls keep their original dimensions while the
+   keyboard is open.  The keyboard height is supplied by portal.js. */
+@media(max-width:700px){
+  html.room-system-keyboard .room{
+    top:0;
+    left:0;
+    width:100%;
+    height:100dvh;
+    min-height:0;
+  }
+  html.room-system-keyboard .room-bottom{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:var(--room-keyboard-bottom,0px);
+    z-index:50;
+    width:100%;
+    max-width:100vw;
+    min-width:0;
+    box-sizing:border-box;
+  }
+  html.room-system-keyboard .room-bottom .quick-keyboard{
+    display:none!important;
+  }
+  html.room-system-keyboard .composer{
+    width:100%;
+    max-width:100vw;
+    min-width:0;
+    box-sizing:border-box;
+    overflow:hidden;
+  }
+  html.room-system-keyboard .composer>button,
+  html.room-system-keyboard .composer>select,
+  html.room-system-keyboard .composer>textarea{
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+}
+
+/* Keep the two phone input modes independent. Ordinary text entry resizes
+   the visible room to the system keyboard; the shortcut keyboard floats above
+   the composer and covers only the lower part of the chat. */
+@media(max-width:700px){
+  .room-bottom{position:relative;z-index:10;overflow:visible}
+  .quick-keyboard{position:absolute;left:0;right:0;bottom:100%;z-index:30;width:100%;box-sizing:border-box;margin:0;overflow:hidden;box-shadow:0 -2px 8px #1b33401c}
+  .quick-keyboard[hidden]{display:none!important}
+  .composer{position:relative;z-index:31;width:100%;max-width:100vw;min-width:0;overflow:hidden;box-sizing:border-box}
+  .composer>button,.composer>select,.composer>textarea{min-width:0;max-width:100%;box-sizing:border-box;flex-shrink:0}
+  .composer.has-ball-select #message-input{min-width:0;width:100%;max-width:100%}
+}
+
+/* Keep mobile text entry stable when the system keyboard opens. 16px avoids
+   browser auto-zoom; fixed sizing keeps the room content visible. */
+@media(max-width:700px){
+  .composer #message-input{
+    width:100%;min-width:0;max-width:100%;
+    height:34px;min-height:34px;max-height:34px;
+    resize:none;overflow:hidden;
+    font-size:16px;line-height:20px;
+    transform:none;
+  }
+  .composer.has-ball-select #message-input{flex:1 1 auto}
+}
+
+/* Reference keyboard rows: each row fills the available width, including
+   the nine-key rows, so no blank cells remain at either side. */
+@media(max-width:700px){
+  .quick-keyboard-row{justify-content:space-between}
+  .quick-keyboard-row[data-count="9"] button{
+    flex-basis:calc((100% - 16px)/9);width:calc((100% - 16px)/9)
+  }
+  .quick-keyboard-row[data-count="8"] button{
+    flex-basis:calc((100% - 14px)/8);width:calc((100% - 14px)/8)
+  }
+  .quick-keyboard button[data-key="正"],
+  .quick-keyboard button[data-key="正"]:hover,
+  .quick-keyboard button[data-key="正"]:active,
+  .quick-keyboard button[data-key="正"]:focus{
+    background:#f39800;border-color:#e18400;color:#fff;transform:none
+  }
+  .quick-keyboard button[data-key="换"],
+  .quick-keyboard button[data-key="换"]:hover,
+  .quick-keyboard button[data-key="换"]:active,
+  .quick-keyboard button[data-key="换"]:focus{
+    background:#f39800;border-color:#e18400;color:#fff;transform:none
+  }
+  .quick-keyboard button[data-key="×"]{color:#e03d43}
+}
+
+/* “正” uses the same neutral button colors as the other shortcuts. */
+@media(max-width:700px){
+  .quick-keyboard button[data-key="正"],
+  .quick-keyboard button[data-key="正"]:hover,
+  .quick-keyboard button[data-key="正"]:active,
+  .quick-keyboard button[data-key="正"]:focus{
+    background:#fff;border-color:#ccd7de;color:#162f3d;transform:none
+  }
+}
+
+/* Selected mobile sizing: medium keyboard and larger draw numbers. */
+@media(max-width:700px){
+  .quick-keyboard{max-height:123px}
+  .quick-keyboard button,
+  .quick-keyboard button:hover,
+  .quick-keyboard button:active,
+  .quick-keyboard button:focus{
+    height:28px;min-height:28px;max-height:28px;font-size:13px;line-height:24px
+  }
+  .draw-strip .ball{width:24px;height:24px;font-size:16px}
+}
+@media(max-width:420px){
+  .quick-keyboard{max-height:123px}
+  .draw-strip .ball{width:24px;height:24px;font-size:16px}
+}
+
+/* Reference layout: use the available band above the composer for larger,
+   readable shortcut labels while keeping every row and tap state fixed. */
+@media(max-width:700px){
+  .quick-keyboard{
+    max-height:148px;
+    padding:5px 5px 4px;
+  }
+  .quick-keyboard-row{gap:2px;margin-bottom:3px}
+  .quick-keyboard-row:last-child{margin-bottom:0}
+  .quick-keyboard button,
+  .quick-keyboard button:hover,
+  .quick-keyboard button:active,
+  .quick-keyboard button:focus{
+    height:32px;min-height:32px;max-height:32px;
+    padding:1px 0;
+    font-size:15px;line-height:28px;
+    font-weight:700;letter-spacing:-.5px;
+    white-space:nowrap;overflow:hidden;
+  }
+}
+
+/* Final override: keep the native-keyboard composer at the visible room bottom. */
+@media(max-width:700px){
+  html.room-system-keyboard .room{
+    position:fixed!important;top:0!important;left:0!important;width:100%!important;
+    height:var(--room-visible-height,100dvh)!important;min-height:0!important;
+    margin:0!important;overflow:hidden!important;
+  }
+  html.room-system-keyboard .room-bottom{
+    position:absolute!important;left:0!important;right:0!important;bottom:0!important;
+    z-index:50!important;width:100%!important;max-width:100%!important;
+    min-width:0!important;box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .messages{padding-bottom:calc(68px + env(safe-area-inset-bottom))!important}
+  html.room-system-keyboard .jump,
+  html.room-system-keyboard .quick-keyboard{display:none!important}
+  html.room-system-keyboard .composer{
+    display:grid!important;grid-template-columns:44px minmax(0,1fr) 92px!important;
+    gap:4px!important;width:100%!important;max-width:100%!important;min-width:0!important;
+    box-sizing:border-box!important;padding:6px 7px!important;overflow:hidden!important;
+  }
+  html.room-system-keyboard .composer.has-ball-select{grid-template-columns:44px minmax(0,1fr) 112px 92px!important}
+  html.room-system-keyboard .composer #message-input{
+    width:auto!important;min-width:0!important;max-width:100%!important;
+    height:42px!important;min-height:42px!important;max-height:42px!important;
+    flex:none!important;box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .composer #ball-select{
+    width:112px!important;min-width:0!important;max-width:100%!important;height:42px!important;
+    box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .composer .keyboard-toggle{
+    width:44px!important;min-width:44px!important;height:42px!important;padding:0!important;
+  }
+  html.room-system-keyboard .composer>button:last-child{
+    width:92px!important;min-width:92px!important;height:42px!important;
+    padding:4px 8px!important;box-sizing:border-box!important;
+  }
+}
+
+/* Keep the room at the device width while the visual viewport changes. */
+@media(max-width:700px){
+  html.room-page .room{left:0!important;width:100%!important;max-width:100vw!important}
+}
+
+/* Stable final mobile viewport contract. */
+@media(max-width:700px){
+  html.room-page,html.room-page body,html.room-page #app{width:100%;max-width:100%;overflow:hidden}
+  html.room-page .room{position:fixed!important;top:0!important;left:0!important;width:100%!important;max-width:100vw!important;height:100dvh!important;min-height:320px!important}
+  html.room-system-keyboard .room{height:var(--room-visible-height,100dvh)!important;max-height:100dvh!important}
+  html.room-system-keyboard .room-bottom{position:absolute!important;bottom:0!important;left:0!important;right:0!important;width:100%!important}
+}
+
+/* iPhone keyboard compatibility: keep the room layer stable and lift only
+   the composer above the visual keyboard. This avoids Safari hiding the room
+   when visualViewport changes during focus. */
+@media(max-width:700px){
+  html.room-page,html.room-page body,html.room-page #app{
+    width:100%;max-width:100%;overflow:hidden;overscroll-behavior:none;
+  }
+  html.room-page .room{
+    position:fixed!important;inset:0!important;
+    width:100vw!important;max-width:100vw!important;
+    height:100lvh!important;min-height:0!important;
+    margin:0!important;overflow:hidden!important;
+  }
+  html.room-system-keyboard .room{
+    height:100lvh!important;max-height:none!important;
+  }
+  html.room-page .room-bottom,
+  html.room-system-keyboard .room-bottom{
+    position:fixed!important;left:0!important;right:0!important;
+    bottom:var(--room-keyboard-offset,0px)!important;
+    z-index:60!important;width:100%!important;max-width:100vw!important;
+    min-width:0!important;box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .messages{
+    padding-bottom:calc(70px + env(safe-area-inset-bottom))!important;
+  }
+  html.room-system-keyboard .jump{display:none!important}
+  html.room-system-keyboard .quick-keyboard{display:none!important}
+  html.room-system-keyboard .composer{
+    display:grid!important;
+    grid-template-columns:44px minmax(0,1fr) 112px 92px!important;
+    gap:4px!important;width:100%!important;max-width:100%!important;
+    min-width:0!important;padding:6px 7px!important;
+    box-sizing:border-box!important;overflow:hidden!important;
+  }
+  html.room-system-keyboard .composer #message-input{
+    width:auto!important;min-width:0!important;max-width:100%!important;
+    height:42px!important;min-height:42px!important;max-height:42px!important;
+    box-sizing:border-box!important;resize:none!important;flex:none!important;
+  }
+  html.room-system-keyboard .composer #ball-select{
+    width:112px!important;min-width:0!important;max-width:100%!important;
+    height:42px!important;box-sizing:border-box!important;
+  }
+  html.room-system-keyboard .composer .keyboard-toggle{
+    width:44px!important;min-width:44px!important;height:42px!important;padding:0!important;
+  }
+  html.room-system-keyboard .composer>button:last-child{
+    width:92px!important;min-width:92px!important;height:42px!important;
+    padding:4px 8px!important;box-sizing:border-box!important;
+  }
+}
+
+/* Fit every composer control inside the actual iPhone visual viewport. */
+@media(max-width:700px){
+  html.room-page .room{width:var(--room-viewport-width,100vw)!important;max-width:var(--room-viewport-width,100vw)!important}
+  html.room-page .room-bottom,
+  html.room-system-keyboard .room-bottom{
+    width:var(--room-viewport-width,100vw)!important;
+    max-width:var(--room-viewport-width,100vw)!important;
+  }
+  html.room-system-keyboard .composer,
+  html.room-page .composer{
+    grid-template-columns:40px minmax(0,1fr) 72px!important;
+    gap:3px!important;padding:5px 5px!important;
+    width:100%!important;max-width:100%!important;
+  }
+  html.room-system-keyboard .composer.has-ball-select,
+  html.room-page .composer.has-ball-select{
+    grid-template-columns:40px minmax(0,1fr) 78px 72px!important;
+  }
+  html.room-system-keyboard .composer #ball-select,
+  html.room-page .composer #ball-select{
+    width:78px!important;min-width:78px!important;max-width:78px!important;
+    font-size:15px!important;padding-left:1px!important;padding-right:1px!important;
+  }
+  html.room-system-keyboard .composer .keyboard-toggle,
+  html.room-page .composer .keyboard-toggle{
+    width:40px!important;min-width:40px!important;max-width:40px!important;
+  }
+  html.room-system-keyboard .composer>button:last-child,
+  html.room-page .composer>button:last-child{
+    width:72px!important;min-width:72px!important;max-width:72px!important;
+    padding-left:3px!important;padding-right:3px!important;
+  }
+}
+
+/* Compact mobile chat bubbles so the visible area above the phone keyboard
+   keeps more complete messages in view.  The composer keeps its fixed geometry. */
+@media(max-width:700px){
+  .messages{padding:8px 6px 16px}
+  .message{gap:6px;margin-bottom:8px}
+  .avatar{width:32px;height:32px;font-size:21px;border-radius:4px}
+  .message-body{max-width:calc(100% - 38px)}
+  .message-name{font-size:12px;line-height:1.2;margin-bottom:2px}
+  .message-name time{font-size:9px;margin-left:4px}
+  .bubble{font-size:13px;line-height:1.35;padding:5px 7px;border-radius:6px}
+  .bubble:before{top:10px;width:6px;height:6px}
+  .message.draw-message>.message-body{max-width:calc(100% - 38px)}
+}
